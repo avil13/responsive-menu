@@ -7,7 +7,6 @@ body{
 }
 
 .nav{
-    border:1px solid #000;
     padding:4px;
     display:inline-block;
     margin-top:10px;
@@ -40,10 +39,11 @@ body{
 .nav li:hover .sub .sub{display:none; }
 .nav li:not(.has-sub):hover>.sub {display:block; }
 
-a.cloned{color:red;}
-.has-sub>a{font-weight:bold; font-style:italic;}
-
 .nav .sub.show{display:block !important;}
+
+/* for tests */
+a.cloned{color:red;}
+
 
 
 

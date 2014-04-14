@@ -31,11 +31,22 @@
                     </ul>
                 </li>
             </ul>
-        </li>>
+        </li>
     </ul>
     <!--
      -->
-    <script src="script.js"></script>
+    <script src="responseMenu.js"></script>
+    <script>
+jQuery(document).ready(function($) {
+
+        Menu = $('.nav').responseMenu({
+            'subSelector': '.sub',
+            'showCss': 'show',
+            'withSubCss': 'has-sub'
+        });
+
+});
+    </script>
 
 </body>
 </html>
