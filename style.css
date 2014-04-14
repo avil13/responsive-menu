@@ -1,0 +1,41 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background:#222;
+}
+
+.nav{
+    border:1px solid #000;
+    padding:4px;
+    display:inline-block;
+    margin-top:10px;
+}
+
+.nav li{
+    position:relative;
+    background-color:#72e1ac;
+    display:inline;
+    margin-left:8px;
+    padding:6px 20px;
+    border:1px solid #888;
+}
+
+.nav li .sub{
+    display:none;
+    position:absolute;
+    left:10px;
+    top:20px;
+}
+.nav li:hover .sub{
+    display:block;
+}
+.nav li .sub li{
+    background: #daf1d9;
+    display: inline-block;
+    width: 100%;
+    top: 15px;
+    left: -19px;
+}
+
