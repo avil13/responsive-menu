@@ -37,11 +37,11 @@ body{
 }
 
 .nav li:hover {background-color:#8bff68;}
-/*.nav li:hover .sub{display:block; }*/
 .nav li:hover .sub .sub{display:none; }
+.nav li:not(.has-sub):hover>.sub {display:block; }
 
 a.cloned{color:red;}
-a.has-sub{font-weight:bold;}
+.has-sub>a{font-weight:bold; font-style:italic;}
 
 .nav .sub.show{display:block !important;}
 

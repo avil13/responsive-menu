@@ -18,10 +18,33 @@ $.each(sub, function(i, j) {
     }
 });
 
-$.each(donorEl, function(i, j) {
-    $(j).addClass('has-sub')
-        .on('click', function() {
+var responsive = function() {
+    $.each(donorEl, function(i, j) {
+        $(j).parent().addClass('has-sub');
+
+        $(j).on('click', function() {
             $(this).parent().children('.sub').toggleClass('show');
             return false;
         });
-});
+    });
+
+
+    $.each(cloneEl, function(i, j) {
+        $(j).show();
+    });
+};
+responsive();
+
+
+var simple = function() {
+    $.each(donorEl, function(i, j) {
+        $(j).parent().removeClass('has-sub');
+        $(j).off('click');
+    });
+
+    $.each(cloneEl, function(i, j) {
+        $(j).hide();
+    });
+
+    $('.nav').find('.show').removeClass('show');
+};
