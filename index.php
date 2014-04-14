@@ -10,7 +10,7 @@
 <body>
     <ul class="nav">
         <li>
-            <a href="#link_1_level" class="level1">link</a>
+            <a href="#link_1_level" class="level1">link ...</a>
             <ul class="sub">
                 <li><a href="#link_2_level">sub link 1</a></li>
                 <li><a href="#link_2_level">sub link 1</a></li>
@@ -18,12 +18,12 @@
             </ul>
         </li>
         <li>
-            <a href="#link_1_level" class="level1">link</a>
+            <a href="#link_1_level" class="level1">link ...</a>
             <ul class="sub">
                 <li><a href="#link_2_level">sub link 2</a></li>
                 <li><a href="#link_2_level">sub link 2</a></li>
                 <li>
-                    <a href="#link_2_level">sub link 2</a>
+                    <a href="#link_2_level">sub link 2 ...</a>
                     <ul class="sub">
                         <li><a href="#link_3_level">sub link 3</a></li>
                         <li><a href="#link_3_level">sub link 3</a></li>
