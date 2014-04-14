@@ -25,17 +25,29 @@ body{
 .nav li .sub{
     display:none;
     position:absolute;
-    left:10px;
-    top:20px;
+    left:20px;
+    top:16px;
 }
-.nav li:hover .sub{
-    display:block;
-}
-.nav li .sub li{
+.nav .sub li{
     background: #daf1d9;
     display: inline-block;
     width: 100%;
     top: 15px;
     left: -19px;
 }
+
+.nav li:hover {background-color:#8bff68;}
+/*.nav li:hover .sub{display:block; }*/
+.nav li:hover .sub .sub{display:none; }
+
+a.cloned{color:red;}
+a.has-sub{font-weight:bold;}
+
+.nav .sub.show{display:block !important;}
+
+
+
+
+
+
 

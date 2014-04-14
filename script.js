@@ -1,23 +1,27 @@
-jQuery(document).ready(function($) {
+var sub = $('.sub');
+var cloneEl = [];
+var donorEl = [];
 
-    var sub = $('.nav').find('.sub');
-    var cloneEl = [];
+$.each(sub, function(i, j) {
+    var $t = $(j);
+    var a = $t.parent().children('a');
+    var a1 = a.clone(false);
+    a1.addClass('cloned');
 
-    $.each(sub, function(i, j) {
-        var $t = $(j);
-        var a1 = $t.parent().find('.level1').clone(false);
+    var lis = $t.children('li');
+    // debugger;
+    if (lis[0]) {
+        var li = $(lis[0]).clone(false);
+        $t.prepend(li.html(a1));
+        cloneEl.push(li);
+        donorEl.push(a);
+    }
+});
 
-        var lis = $t.children('li');
-// debugger;
-        if(lis[0]){
-            var li = $(lis[0]).clone(false);
-            $t.prepend( li.html(a1) );
-            cloneEl.push(li);
-        }
-    });
-
-
-
-
-
+$.each(donorEl, function(i, j) {
+    $(j).addClass('has-sub')
+        .on('click', function() {
+            $(this).parent().children('.sub').toggleClass('show');
+            return false;
+        });
 });
